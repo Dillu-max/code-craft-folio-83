@@ -2,41 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Professional Portfolio Design System - Healthcare Informatics Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 248 250 252;
+    --foreground: 203 90% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 255 255 255;
+    --card-foreground: 203 90% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255 255 255;
+    --popover-foreground: 203 90% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 203 90% 22%;
     --primary-foreground: 210 40% 98%;
+    --primary-light: 200 75% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 199 89% 78%;
+    --secondary-foreground: 203 90% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 199 89% 78%;
+    --accent-foreground: 203 90% 15%;
 
-    --destructive: 0 84.2% 60.2%;
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
+
+    --warning: 45 93% 47%;
+    --warning-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 203 90% 22%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Portfolio Variables */
+    --gradient-primary: linear-gradient(135deg, hsl(203 90% 22%), hsl(200 75% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(199 89% 78%), hsl(210 40% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(203 90% 22%) 0%, hsl(200 75% 45%) 50%, hsl(199 89% 78%) 100%);
+    
+    --shadow-sm: 0 1px 2px hsl(203 90% 22% / 0.05);
+    --shadow-md: 0 4px 6px hsl(203 90% 22% / 0.07), 0 2px 4px hsl(203 90% 22% / 0.06);
+    --shadow-lg: 0 10px 15px hsl(203 90% 22% / 0.1), 0 4px 6px hsl(203 90% 22% / 0.05);
+    --shadow-xl: 0 20px 25px hsl(203 90% 22% / 0.1), 0 10px 10px hsl(203 90% 22% / 0.04);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
